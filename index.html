@@ -1,25 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/stylesheet.css" media="all" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
-    <h1>Ma page</h1>
-    <div id="app">
-        <h2>{{ title }}</h2>
-    </div>
-    <script>
-        new Vue ({
-            el: '#app',
-            data: {
-                title: 'Hello'
-            }
-        })
-    </script>
+    <!-- 
+    <SectionMenu />
+    <SectionHeader />
+    <SectionCards />
+    <SectionTransactionHistory />
+    <SectionPricing />
+    <SectionStats />
+    <SectionNewTransaction />
+    -->
+    
+    <section class="menu">
+        <h3>cloudcash</h3>
+				<ul>
+					<li><a href="">Overview</a></li>
+					<li><a href="">Transactions</a></li>
+					<li><a href="">Cards</a></li>
+					<li><a href="">Invoices</a></li>
+					<li><a href="">Goals</a></li>
+                    <li><a href="">Settings</a></li>
+				</ul>
+                <div>
+                    <p>Give your money<br>awesome space in cloud</p>
+                    <button>Upgrade to premium</button>
+                </div>
+    </section>
+
+
+    <section class="header">
+        <h1>Weekly sumup</h1>
+        <p>Get summary of your weekly online transactions here.</p>
+
+        <div>
+            <div>LogoMail</div>
+            <div>LogoCloche</div>
+            <div>
+                <div>LogoUser</div>
+                <div>
+                    <div>Nom</div>
+                    <div>Admin account</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div>
+            <h2>Cards</h2>
+            <div>
+                <div>Carte</div>
+                <div>
+                    <div>Barre de progression</div>
+                    <div>Weekly payment limit</div>
+                </div>
+            </div>
+            <div>
+                <div>Currnt Balance</div>
+                <div>Income</div>
+                <div>Outcome</div>
+                <div>Deactivate Card</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tranHistory">
+        <h2>Transaction History</h2>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Reciever</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tesco Market</td>
+                        <td>Shopping</td>
+                        <td>10/5/2020</td>
+                        <td>75$</td>
+                    </tr>
+                    <tr>
+                        <td>Resto</td>
+                        <td>Food</td>
+                        <td>11/06/2020</td>
+                        <td>50$</td>
+                    </tr>
+                    <tr>
+                        <td>Gym</td>
+                        <td>Sport</td>
+                        <td>12/07/2020</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td>Stuff</td>
+                        <td>Other</td>
+                        <td>13/08/2020</td>
+                        <td>100$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <section class="pricing">
+        <h2>Goals</h2>
+        <div>
+            <div>
+                <div>
+                    <div>Price $</div>
+                    <div>Date</div>
+                </div>
+                <div>Logo</div>
+                <div>Holidays</div>
+            </div>
+            <div>
+                <div>
+                    <div>Price $</div>
+                    <div>Date</div>
+                </div>
+                <div>Logo</div>
+                <div>Rent</div>
+            </div>
+            <div>
+                <div>
+                    <div>Price $</div>
+                    <div>Date</div>
+                </div>
+                <div>Logo</div>
+                <div>Games</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <h2>Outcome Statistics</h2>
+        <div>
+            <div>Logo</div>
+            <div>Progression</div>
+            <div>Shopping</div>
+            <div>%</div>
+        </div>
+        <div>
+            <div>Logo</div>
+            <div>Progression</div>
+            <div>Shopping</div>
+            <div>%</div>
+        </div>
+    </section>
+
+    <section class="newTran">
+        <h2>New Transaction</h2>
+        <div>
+            <div>
+                <div>
+                    <div>Avatar</div>
+                    <div>Name</div>
+                </div>
+                <div>
+                    <div>Avatar</div>
+                    <div>Name</div>
+                </div>
+                <div>
+                    <div>Avatar</div>
+                    <div>Name</div>
+                </div>
+            </div>
+            <div>
+                <input type="$">
+                <button>Send Transfert ></button>
+            </div>
+        </div>
+        <div>
+            <button>Get great loan !</button>
+        </div>
+    </section>
+
 </body>
 </html>

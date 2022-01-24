@@ -1,0 +1,15 @@
+/* MENU */
+h3 {
+    color: #0B80D8;
+    margin: 1em;
+}
+
+li {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+a {
+    color: #CCCCCC;
+    text-decoration:none;
+}
